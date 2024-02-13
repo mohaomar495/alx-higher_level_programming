@@ -1,42 +1,28 @@
 #!/usr/bin/python3
 
-"""
-Square Class
-"""
+"""Define a class Square."""
 
 
 class Square:
-    """
-    Square
-    """
+    """Represent a square."""
 
     def __init__(self, size=0, position=(0, 0)):
-        """
-        Initializes the size of the square
+        """Initialize a new square.
 
-        :arg size(int): size of the square as integer
-        :arg position(int, int): the position of the new square
-
+        Args:
+            size (int): The size of the new square.
+            position (int, int): The position of the new square.
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
-        """
-        getters
-
-        :return: size(int)
-        """
-        return self.__size
+        """Get/set the current size of the square."""
+        return (self.__size)
 
     @size.setter
     def size(self, value):
-        """
-
-        :param value(int): new value of the size paramater
-        :return: size(int)
-        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -45,47 +31,30 @@ class Square:
 
     @property
     def position(self):
-        """
-        position getter
-        :return: position
-        """
-        return self.__position
+        """Get/set the current position of the square."""
+        return (self.__position)
 
     @position.setter
     def position(self, value):
-        """
-        position setter
-        :param value(tuple -> int): takes tuple of 2 positive integers
-        :return: tuple
-        """
-        if not isinstance(value, tuple) or len(value) != 2:
+        if (not isinstance(value, tuple) or
+                len(value) != 2 or
+                not all(isinstance(num, int) for num in value) or
+                not all(num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
-
-        if not all(isinstance(num, int) for num in value) or not all(
-            num >= 0 for num in value
-        ):
-            raise ValueError("position must be a tuple of 2 positive integers")
         self.__position = value
 
     def area(self):
-        """
-        Area
-
-        :return: area(int) of the square
-        """
-        return self.__size**2
+        """Return the current area of the square."""
+        return (self.__size * self.__size)
 
     def my_print(self):
-        """
-        display the square as #
-        :return: square as #
-        """
+        """Print the square with the # character."""
         if self.__size == 0:
             print("")
             return
-        [print("") for j in range(self.__position[1])]
 
-        for h in range(self.__size):
-            [print(" ", end="") for y in range(self.__position[0])]
-            [print("#", end="") for x in range(self.__size)]
+        [print("") for i in range(0, self.__position[1])]
+        for i in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
             print("")
