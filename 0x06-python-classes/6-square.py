@@ -15,6 +15,7 @@ class Square:
         Initializes the size of the square
 
         :arg size(int): size of the square as integer
+        :arg position(int, int): the position of the new square
 
         """
         self.__size = size
@@ -81,7 +82,8 @@ class Square:
         if self.__size == 0:
             print()
             return
-        for _ in range(self.__position[1]):
-            print()
-        for _ in range(self.__size):
-            print(" " * self.__position[0] + "#" * self.__size)
+        [print() for j in range(self.__position[1])]
+        
+        for y in range(self.__size):
+            [print(" ", end = "") for y in range(self.__position[0])]
+            [print("#", end = "") for x in range(self.__size)]
