@@ -81,10 +81,11 @@ class Square:
         :return: square as #
         """
         if self.__size == 0:
-            print()
+            print("")
             return
-        [print() for j in range(self.__position[1])]
+        [print("") for j in range(self.__position[1])]
 
-        for y in range(self.__size):
+        for h in range(self.__size):
             [print(" ", end="") for y in range(self.__position[0])]
             [print("#", end="") for x in range(self.__size)]
+            print("")
