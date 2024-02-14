@@ -1,0 +1,12 @@
+-- script that creates the database hbtn_0d_usa and table cities (in the database hbtn_0d_usa) on your mysql server.
+
+CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
+
+USE hbtn_0d_usa;
+
+CREATE TABLE IF NOT EXISTS cities (
+	id INT AUTO_INCREMENT NOT NULL UNIQUE PRIMARY KEY,
+	state_id INT NOT NULL,
+	name VARCHAR (255) NOT NULL,
+	FOREIGN KEY(id) REFERENCES states(id)
+	);
