@@ -67,7 +67,7 @@ class Square:
             print("")
     
     def __str__(self):
-    """Print the square with the # character."""
+        """Print the square with the # character."""
         if self.__size == 0:
             print("")
             return
