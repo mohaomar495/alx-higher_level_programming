@@ -68,12 +68,12 @@ class Square:
             print("")
 
     def __str__(self):
-        if self.__size == 0:
-            print("")
-            return
-        [print("") for i in range(self.__position[1])]
+        """ Display str representation """
+        if self.__size != 0:
+            [print("") for i in range(self.__position[1])]
         for j in range(self.__size):
             [print(" ", end="") for n in range(self.__position[0])]
             [print("#", end="") for m in range(self.__size)]
-            print("")
+            if i != self.__size - 1:
+                print()
         return ""
