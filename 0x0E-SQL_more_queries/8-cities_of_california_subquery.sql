@@ -4,4 +4,4 @@ SELECT id, name from cities
 UNION
 SELECT id, name FROM states
 WHERE name == "California"
-ORDER BY id;
+ORDER BY cities.id;
