@@ -4,8 +4,9 @@
 
 from math import pi
 
+
 class MagicClass:
-    """ circle. """
+    """circle."""
 
     def __init__(self, radius=0):
         """
@@ -21,9 +22,9 @@ class MagicClass:
         self.__radius = radius
 
     def area(self):
-        """ return the area of the circle. """
-        return self.__radius ** 2 * pi
+        """return the area of the circle."""
+        return self.__radius**2 * pi
 
     def circumference(self):
-        """ returns the circumference of the circle """
+        """returns the circumference of the circle"""
         return 2 * self.__radius * pi
