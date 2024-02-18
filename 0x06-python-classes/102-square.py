@@ -33,75 +33,82 @@ class Square:
 
     def __eq__(self, other):
         """
-        Determines if the area of one square is equal to the area of ano            ther square.
+        Determines if the area of one square is
+        equal to the area of another square.
 
          Args:
             other (Square): The other square to compare with.
 
         Returns:
-            bool: True if the area of the current square is equal, False o                therwise.
+            bool: True if the area of the current
+            square is equal, False otherwise.
         """
         return self.area() == other.area()
 
     def __ne__(self, other):
         """
-        Determines if the area of one square is not equal to the area of ano            ther square.
+        Determines if the area of one square is
+        not equal to the area of another square.
 
          Args:
             other (Square): The other square to compare with.
 
         Returns:
-            bool: True if the area of the current square is not equal to,
-            False otherwise.
+            bool: True if the area of the current
+            square is not equal to, False otherwise.
         """
         return self.area() != other.area()
 
     def __gt__(self, other):
         """
-        Determines if the area of one square is greater than the area of ano            ther square.
+        Determines if the area of one square is
+        greater than the area of another square.
 
          Args:
             other (Square): The other square to compare with.
 
         Returns:
-            bool: True if the area of the current square is greater, False o                therwise.
+            bool: True if the area of the current
+            square is greater, False otherwise.
         """
         return self.area() > other.area()
 
     def __ge__(self, other):
         """
-        Determines if the area of one square is greater than or equal the
-        area of another square.
+        Determines if the area of one square is greater
+        than or equal the area of another square.
          Args:
             other (Square): The other square to compare with.
 
         Returns:
-            bool: True if the area of the current square is greater or
-            equal, False otherwise.
+            bool: True if the area of the current
+            square is greater or equal, False otherwise.
         """
         return self.area() >= other.area()
 
     def __lt__(self, other):
         """
-        Determines if the area of one square is less than the area of ano            ther square.
+        Determines if the area of one square is
+        less than the area of another square.
 
          Args:
             other (Square): The other square to compare with.
 
         Returns:
-            bool: True if the area of the current square is less than, False                otherwise.
+            bool: True if the area of the current
+            square is less than, False otherwise.
         """
         return self.area() < other.area()
 
     def __le__(self, other):
         """
-        Determines if the area of one square is less than or equal the
-        area of another square.
+        Determines if the area of one square is less than
+        or equal the area of another square.
          Args:
             other (Square): The other square to compare with.
 
         Returns:
-            bool: True if the area of the current square is less than or
-            equal, False otherwise.
+            bool: True if the area of the current square
+            is less than or equal, False otherwise.
         """
         return self.area() <= other.area()
