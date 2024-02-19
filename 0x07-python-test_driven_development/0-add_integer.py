@@ -4,6 +4,7 @@
 Function for addition of two numbers.
 """
 
+
 def add_integer(a, b=98):
     """
     function that adds two integer or floats and returns the added values.
