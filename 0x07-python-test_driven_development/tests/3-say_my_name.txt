@@ -48,6 +48,16 @@ Both cannot be numbers or even anything other than string.
         ...
     TypeError: last_name must be a string
 
+    >>> say_my_name("Mohammad", ["Mohammad", "Adde"])
+	Traceback (most recent call last):
+		...
+	TypeError: last_name must be a string
+
+    >>> say_my_name({"Mohammad": 10, "Adde": 20}, 25)
+	Traceback (most recent call last):
+		...
+	TypeError: first_name must be a string
+ 
 At least there should be one paramter.
 
 ::
