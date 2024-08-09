@@ -18,7 +18,6 @@ Testing most of the normal inputs with single line and multiline strings.
     <BLANKLINE>
     How are you?
     <BLANKLINE>
-    <BLANKLINE>
     >>> text_indentation("    Hello.")
     Hello.
     <BLANKLINE>
