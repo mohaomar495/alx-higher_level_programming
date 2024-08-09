@@ -22,12 +22,10 @@ Testing most of the normal inputs with single line and multiline strings.
     >>> text_indentation("    Hello.")
     Hello.
     <BLANKLINE>
-    <BLANKLINE>
     >>> text_indentation("Result: 23.")
     Result:
     <BLANKLINE>
     23.
-    <BLANKLINE>
     <BLANKLINE>
 
 Example with multiline strings.

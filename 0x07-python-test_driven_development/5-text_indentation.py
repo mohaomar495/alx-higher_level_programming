@@ -23,4 +23,4 @@ def text_indentation(text):
                 i += 1
             result.append("\n\n")
         i += 1
-    print("".join(result))
+    print("".join(result), end="")
