@@ -37,6 +37,11 @@ class TesMaxInteger(TestCase):
         singleContainingFloatList = [5.5]
         self.assertEqual(max_integer(singleContainingFloatList), 5.5)
 
+    def testMaxAtBegining(self):
+        """ Test Maximum at the beginning """
+        maxAtBegining = [5, 3, 4, 1]
+        self.assertEqual(max_integer(maxAtBegining), 5)
+
     def testCharacterContainingList(self):
         """ Test charchter containing lists """
         charContainingList = ["a", "B", "r", "R"]
